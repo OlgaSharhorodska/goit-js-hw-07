@@ -5,7 +5,7 @@ import { galleryItems } from './gallery-items.js';
 const gallery = document.querySelector('.gallery');
 
 function createMarkup(arr) {
-  return arr.map(({ preview }) => `<li class="gallery__image"><img src='${preview}' alt=""></li>`).join('');
+  return arr.map(({ preview, original }) => `<li class="gallery__link gallery__item "><img class="gallery__image" src='${preview}' alt=""></li>`).join('');
 }
 
 
