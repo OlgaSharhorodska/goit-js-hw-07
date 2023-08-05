@@ -22,7 +22,9 @@ gallery.addEventListener('click', onClickImage)
 
 function onClickImage(evt) {
     evt.preventDefault();
-    
+    if (evt.target === evt.currentTarget) {
+        return;
+    }
     const bigImage = evt.target.dataset.source;
     const instance = basicLightbox.create(`
 	<div>

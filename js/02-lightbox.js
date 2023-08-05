@@ -14,10 +14,5 @@ function createMarkupGallery(arr) {
 
 containerGallery.insertAdjacentHTML('beforeend', createMarkupGallery(galleryItems))
 
-containerGallery.addEventListener('click', onClickImage)
 
-function onClickImage(evt) {
-    evt.preventDefault();
-}
-
-    const instance = new SimpleLightbox('.gallery a', { captionsData: "alt", captionDelay: 250 });
+const instance = new SimpleLightbox('.gallery a', { captionsData: "alt", captionDelay: 250 });
